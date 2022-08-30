@@ -27,4 +27,4 @@ while i < 600851475143:
 # for i in range(2, num):
 #     if (num % i == 0):
 #         div = num / i
-#         print(div) #=> 8462696833.0
+#         print(div) #=> 84626is96833.0
