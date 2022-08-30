@@ -13,18 +13,19 @@ def isPrime_O_sqr_n_2(n):
     return d * d > n
 
 def sum_isPrime(max_number):
+    max = [i for i in range(max_number)]
     sum = 0
-    number = 2
-    while number <= max_number:
-        if isPrime_O_sqr_n_2(number):
-            # print(number)
-            sum += number
-        number += 1
-    return sum
+    for i in max:
+        if isPrime_O_sqr_n_2(i):
+            sum += i
+    return sum -1
+
+
+
 
 if __name__ == '__main__':
-    # print(sum_isPrime(2000000))
-    print([a for a in range(2000000)])
+    print(sum_isPrime(2000000))
+    # print([a for a in range(2000000)])
 
 
 '''
